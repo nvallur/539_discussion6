@@ -24,8 +24,19 @@ nav ul li{
     display: inline;
     margin: 0 10px 0 10px;
     padding: 15px;
-    background-color: rgb(250, 187, 69);
-    font-size: 2em;
+    background-color: rgb(250, 69, 165);
+    
+    font-size: 1.2em;
+    border-radius: 4px;
+
+}
+
+nav ul li:hover{
+    /* Set display, margin, padding, font-size, background-color */
+ 
+    background-color: rgb(212, 2, 153);
+    
+ 
 
 }
 
@@ -36,8 +47,12 @@ nav a{
 }
 
 a:visited{
-    /* Set color */
+    color: white;
+    text-decoration: wavy;
 
+}
+current{
+    background-color: fuchsia;
 }
 
 nav a.current{
@@ -47,58 +62,115 @@ nav a.current{
 
 h1{
    /*Set font and font size*/
+   font-size: 2em;
+   font-weight: bolder;
+   text-decoration: underline;
+   color:rgb(212, 2, 153)
+   /* font-family: 'Courier New', Courier, monospace; */
 
 }
 
 h2{
     /*Set font, font size, and alignment*/
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
 h3{
     /*Set font size*/
+    font-size: 1.2em;
 
 }
 
 h1, h2, h3{
     /*Set margin */
+    margin: 10px 10px 10px 10px;
 
 }
+img{
+    padding: 10px;
+}
+
 .grid{
     /*Set width, margin, border properties, background color, and grid properties */
+    /* It should be 90% of the body and centered.
+It should have a border radius
+It should be a grid with three columns of 30%
+Space them horizontally to match this image
+Leave 10px between each row
+Style the images within the grid to take up 90% of the column and be centered. */
+
+display: grid;
+grid-template-columns: 30% 30% 30%;
+width: 90%;
+justify-content: center;
+row-gap: 10px;
+column-gap: 15px;
+margin: auto;
+
+
+
+
 }
 
 .grid div{
     /* Set border properties, padding, and background color */
+    border: 2px solid black;
+    background-color: aliceblue;
+    border-radius: 15px;
 
 }
 
 .grid img{
     /* Set width, margin, and display */
+    width: 90%;
+    margin: auto;
+    display: block;
 }
-
+/* Column on the far left should have a box shadow to its right.
+Column on the far right should have a box shadow to its left
+Column in the center should have a box shadow on both sides
+All paragraphs except the first should be indented
+All paragraphs should have some margin separating it from the element above it.
+The lists within the grid should be single-spaced, use the image sketchbook.png as the list decoration, and have margin on the left and bottom. */
 
 .grid div:nth-child(3n+1)  {
     /* Set box shadow */
-    }
+    box-shadow: pink 10px 10px 10px;
 
 .grid div:nth-child(3n)  {
     /* Set box shadow */ 
+  
+    box-shadow: rgb(153, 51, 119) -10px 0px 10px;
+}
 }
 
 .grid div:nth-child(3n+2)  {
      /* Set box shadow */
+     /* Column in the center should have a box shadow on both sides */
+     /* box-shadow:inset rgb(192, 192, 255) 10px 10px 10px; */
+     box-shadow: rgb(255, 192, 254) 10px 10px 10px, rgb(192, 192, 255) -10px 10px 10px;
 }
     
 
 p + p {
      /* Set indentation */
+     /* All paragraphs except the first should be indented */
+     /* text-indent: 5px; */
+     text-indent: 10%;
   }
   
 p{
      /* Set margin */
+     margin: 10px 10px 10px 10px;
 }
 
 
 .grid ul li{
     /* Set margin, line-spacing, list styling  */
+    /* The lists within the grid should be single-spaced, use the image sketchbook.png as the list decoration, and have margin on the left and bottom. */ 
+    list-style-image: url("../images/sketchbook.png");
+    line-height: normal;
+    margin-left: 20%;
+    margin-bottom: 25%;
 }
