@@ -1,0 +1,104 @@
+/* Style the BODY so that the page is NOT single-spaced
+Style the PADDING and MARGIN of HEADER and the NAV.  Mix it up - for the padding don’t use the same value on all four sides.
+Style the LIST items within the NAV.  Make sure they are displayed horizontally with some space between them.  
+Adding PADDING to the NAV and a BACKGROUND COLOR.  
+Change the FONT SIZE.
+Style the LINKS within the NAV by removing the line. */
+
+
+
+body{
+   /* Set line spacing */
+   line-height: 2;
+}
+
+
+header, nav{
+    /* Set padding and margin */
+    padding: 10px 5px 10px 5px;
+
+
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline;
+    margin: 0 10px 0 10px;
+    padding: 15px;
+    background-color: rgb(250, 187, 69);
+    font-size: 2em;
+
+}
+
+nav a{
+    /* Set text decoration*/
+    text-decoration: none;
+
+}
+
+a:visited{
+    /* Set color */
+
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+}
+
+
+h1{
+   /*Set font and font size*/
+
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+}
+
+h3{
+    /*Set font size*/
+
+}
+
+h1, h2, h3{
+    /*Set margin */
+
+}
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+
+}
+
+.grid img{
+    /* Set width, margin, and display */
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+}
+    
+
+p + p {
+     /* Set indentation */
+  }
+  
+p{
+     /* Set margin */
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+}
